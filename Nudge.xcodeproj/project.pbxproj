@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3792B30C1D821954001F5D64 /* Nudge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3792B30B1D821954001F5D64 /* Nudge.swift */; };
 		74DE69B51D7F8B0600EE5C32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DE69B41D7F8B0600EE5C32 /* AppDelegate.swift */; };
-		74DE69B71D7F8B0600EE5C32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DE69B61D7F8B0600EE5C32 /* ViewController.swift */; };
+		74DE69B71D7F8B0600EE5C32 /* NudgesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DE69B61D7F8B0600EE5C32 /* NudgesViewController.swift */; };
 		74DE69BA1D7F8B0600EE5C32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74DE69B81D7F8B0600EE5C32 /* Main.storyboard */; };
 		74DE69BC1D7F8B0600EE5C32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74DE69BB1D7F8B0600EE5C32 /* Assets.xcassets */; };
 		74DE69BF1D7F8B0600EE5C32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74DE69BD1D7F8B0600EE5C32 /* LaunchScreen.storyboard */; };
@@ -35,9 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3792B30B1D821954001F5D64 /* Nudge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nudge.swift; sourceTree = "<group>"; };
 		74DE69B11D7F8B0600EE5C32 /* Nudge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nudge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74DE69B41D7F8B0600EE5C32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		74DE69B61D7F8B0600EE5C32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		74DE69B61D7F8B0600EE5C32 /* NudgesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NudgesViewController.swift; sourceTree = "<group>"; };
 		74DE69B91D7F8B0600EE5C32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		74DE69BB1D7F8B0600EE5C32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74DE69BE1D7F8B0600EE5C32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -100,9 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				74DE69B41D7F8B0600EE5C32 /* AppDelegate.swift */,
-				74DE69B61D7F8B0600EE5C32 /* ViewController.swift */,
+				74DE69B61D7F8B0600EE5C32 /* NudgesViewController.swift */,
 				74DE69E41D7F8E4F00EE5C32 /* AddNudgeViewController.swift */,
 				74DE69B81D7F8B0600EE5C32 /* Main.storyboard */,
+				3792B30B1D821954001F5D64 /* Nudge.swift */,
 				74DE69BB1D7F8B0600EE5C32 /* Assets.xcassets */,
 				74DE69BD1D7F8B0600EE5C32 /* LaunchScreen.storyboard */,
 				74DE69C01D7F8B0600EE5C32 /* Info.plist */,
@@ -260,7 +263,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				74DE69E51D7F8E4F00EE5C32 /* AddNudgeViewController.swift in Sources */,
-				74DE69B71D7F8B0600EE5C32 /* ViewController.swift in Sources */,
+				3792B30C1D821954001F5D64 /* Nudge.swift in Sources */,
+				74DE69B71D7F8B0600EE5C32 /* NudgesViewController.swift in Sources */,
 				74DE69B51D7F8B0600EE5C32 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,6 +490,7 @@
 				74DE69DB1D7F8B0600EE5C32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		74DE69DC1D7F8B0600EE5C32 /* Build configuration list for PBXNativeTarget "NudgeTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +499,7 @@
 				74DE69DE1D7F8B0600EE5C32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		74DE69DF1D7F8B0600EE5C32 /* Build configuration list for PBXNativeTarget "NudgeUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +508,7 @@
 				74DE69E11D7F8B0600EE5C32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
