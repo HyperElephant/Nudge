@@ -12,13 +12,13 @@ class AddNudgeViewController: UIViewController {
     
     var newNudge: Nudge?
     var userIsEditing = false
-    var nudgeIndex: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
         if let editNudge = newNudge {
+            //If AddNudge is given an existing nudge before loading, the nudge is being edited
             userIsEditing = true
             nameField.text = editNudge.name
         }
@@ -33,25 +33,5 @@ class AddNudgeViewController: UIViewController {
     
     @IBAction func addButtonPressed(sender: AnyObject) {
         newNudge = Nudge(name: nameField.text!)
-        
     }
-
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-        //print("Preparing for segue")
-        let destination = segue.destinationViewController as! NudgesViewController
-        if let nudge = newNudge {
-            if userIsEditing {
-                destination.nudges[nudgeIndex!] = nudge
-            } else {
-                destination.nudges.append(nudge)
-                //print("Nudge added")
-            }
-        }
-        destination.nudgeToEditIndex = nil
-        destination.nudgeTableView.reloadData()
-    }
- 
-
 }
